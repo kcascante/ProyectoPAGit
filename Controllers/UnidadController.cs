@@ -9,8 +9,10 @@ using ProyectoPA.Models;
 
 namespace ProyectoPA.Controllers
 {
-    public class UnidadController : Controller
+    public class UnidadController : Controller  
     {
+        /*clsLinea ObjLinea = new clsLinea();
+        clsEmpresa ObjEmpresa = new clsEmpresa();*/
         clsUnidad ObjUnidad = new clsUnidad();
         // GET: Unidad
         public ActionResult Index()

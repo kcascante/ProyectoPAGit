@@ -1,0 +1,45 @@
+﻿@model IEnumerable<ProyectoPA.Models.TipoIdentificacion>
+
+@{
+    ViewBag.Title = "Tipo-Identificacion";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.IdTipoIdentificacion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Identificacion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Estado)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.IdTipoIdentificacion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Identificacion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Estado)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Editar", new {  id=item.IdTipoIdentificacion  }) |
+            |
+            @Html.ActionLink("Eliminar", "Eliminar", new { id=item.IdTipoIdentificacion })
+        </td>
+    </tr>
+}
+
+</table>
