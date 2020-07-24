@@ -1,10 +1,10 @@
 ﻿@model IEnumerable<ProyectoPA.Models.Usuario>
 
 @{
-    ViewBag.Title = "Usuario";
+    ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+    <h2>Usuario</h2>
 
 <p>
     @Html.ActionLink("Crear Usuario", "Crear")
@@ -89,9 +89,9 @@
             @Html.DisplayFor(modelItem => item.Estado)
         </td>
         <td>
-            @Html.ActionLink("Editar", "Editar", new {  id=item.IdUsuario  }) |
+            @Html.ActionLink("Editar", "Editar", new {  IdUsuario=item.IdUsuario }) |
            
-            @Html.ActionLink("Eliminar", "Eliminar", new {  id=item.IdUsuario })
+            @Html.ActionLink("Eliminar", "Eliminar", new {  IdUsuario=item.IdUsuario })
         </td>
     </tr>
 }

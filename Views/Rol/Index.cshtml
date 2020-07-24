@@ -1,13 +1,13 @@
 ﻿@model IEnumerable<ProyectoPA.Models.Rol>
 
 @{
-    ViewBag.Title = "Rol";
+    ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>Rol</h2>
 
 <p>
-    @Html.ActionLink("Crear", "Crear")
+    @Html.ActionLink("Crear Rol", "Crear")
 </p>
 <table class="table">
     <tr>
@@ -35,9 +35,9 @@
             @Html.DisplayFor(modelItem => item.Estado)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new {  id=item.IdRol  }) |
+            @Html.ActionLink("Edit", "Edit", new { IdRol = item.IdRol  }) |
            
-            @Html.ActionLink("Delete", "Delete", new {  id=item.IdRol })
+            @Html.ActionLink("Delete", "Delete", new { IdRol = item.IdRol })
         </td>
     </tr>
 }

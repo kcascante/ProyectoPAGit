@@ -1,13 +1,13 @@
 ﻿@model IEnumerable<ProyectoPA.Models.Tarifa>
 
 @{
-    ViewBag.Title = "Tarifa";
+    ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+    <h2>Tarifa</h2>
 
 <p>
-    @Html.ActionLink("Crear", "Crear")
+    @Html.ActionLink("Crear Tarifa", "Crear")
 </p>
 <table class="table">
     <tr>
@@ -47,9 +47,9 @@
             @Html.DisplayFor(modelItem => item.Estado)
         </td>
         <td>
-            @Html.ActionLink("Editar", "Editar", new {  id=item.IdTarifa }) |
+            @Html.ActionLink("Editar", "Editar", new { IdTarifa = item.IdTarifa }) |
            |
-            @Html.ActionLink("Eliminar", "Eliminar", new { id=item.IdTarifa })
+            @Html.ActionLink("Eliminar", "Eliminar", new { IdTarifa = item.IdTarifa })
         </td>
     </tr>
 }

@@ -1,13 +1,13 @@
 ﻿@model IEnumerable<ProyectoPA.Models.TipoIdentificacion>
 
 @{
-    ViewBag.Title = "Tipo-Identificacion";
+    ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+    <h2>TipoIdentificacion</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Crear TipoIdentificacion", "Crear")
 </p>
 <table class="table">
     <tr>
@@ -35,9 +35,9 @@
             @Html.DisplayFor(modelItem => item.Estado)
         </td>
         <td>
-            @Html.ActionLink("Editar", "Editar", new {  id=item.IdTipoIdentificacion  }) |
+            @Html.ActionLink("Editar", "Editar", new { IdTipoIdentificacion = item.IdTipoIdentificacion  })
             |
-            @Html.ActionLink("Eliminar", "Eliminar", new { id=item.IdTipoIdentificacion })
+            @Html.ActionLink("Eliminar", "Eliminar", new { IdTipoIdentificacion = item.IdTipoIdentificacion })
         </td>
     </tr>
 }

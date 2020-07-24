@@ -1,13 +1,13 @@
 ﻿@model IEnumerable<ProyectoPA.Models.LineaUnidad>
 
 @{
-    ViewBag.Title = "Linea-Unidad";
+    ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+    <h2>LineaUnidad</h2>
 
 <p>
-    @Html.ActionLink("Consultar", "Consultar")
+    @Html.ActionLink("Consultar LineaUnidad", "Consultar")
 </p>
 <table class="table">
     <tr>
@@ -35,9 +35,9 @@
             @Html.DisplayFor(modelItem => item.IdLinea)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.IdLineaUnidad  }) |
+            @Html.ActionLink("Edit", "Edit", new { IdLineaUnidad = item.IdLineaUnidad  }) |
            
-            @Html.ActionLink("Delete", "Delete", new {  id=item.IdLineaUnidad  })
+            @Html.ActionLink("Delete", "Delete", new { IdLineaUnidad = item.IdLineaUnidad  })
         </td>
     </tr>
 }

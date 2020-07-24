@@ -30,6 +30,7 @@ namespace ProyectoPA.Controllers
                     usuario.IdUsuario = item.IdUsuario;
                     usuario.Nombre_usuario = item.Nombre_usuario;
                     usuario.Apellido1_usuario = item.Apellido1_usuario;
+                    usuario.Apellido2_usuario = item.Apellido2_usuario;
                     usuario.Fecha_nacimiento = item.Fecha_nacimiento;
                     usuario.IdTipoIdentificacion = item.IdTipoIdentificacion;
                     usuario.Identificacion = item.Identificacion;
@@ -102,6 +103,7 @@ namespace ProyectoPA.Controllers
                 usuario.IdUsuario = dato.IdUsuario;
                 usuario.Nombre_usuario = dato.Nombre_usuario;
                 usuario.Apellido1_usuario = dato.Apellido1_usuario;
+                usuario.Apellido2_usuario = dato.Apellido2_usuario;
                 usuario.Fecha_nacimiento = dato.Fecha_nacimiento;
                 usuario.IdTipoIdentificacion = dato.IdTipoIdentificacion;
                 usuario.Identificacion = dato.Identificacion;
@@ -160,6 +162,7 @@ namespace ProyectoPA.Controllers
                 usuario.IdUsuario = dato.IdUsuario;
                 usuario.Nombre_usuario = dato.Nombre_usuario;
                 usuario.Apellido1_usuario = dato.Apellido1_usuario;
+                usuario.Apellido2_usuario = dato.Apellido2_usuario;
                 usuario.Fecha_nacimiento = dato.Fecha_nacimiento;
                 usuario.IdTipoIdentificacion = dato.IdTipoIdentificacion;
                 usuario.Identificacion = dato.Identificacion;

@@ -1,10 +1,10 @@
 ﻿@model IEnumerable<ProyectoPA.Models.Unidad>
 
 @{
-    ViewBag.Title = "Unidad";
+    ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+    <h2>Unidad</h2>
 
 <p>
     @Html.ActionLink("Crear Unidad", "Crear")
@@ -47,9 +47,9 @@
             @Html.DisplayFor(modelItem => item.Estado)
         </td>
         <td>
-            @Html.ActionLink("Editar", "Editar", new {  id=item.IdUnidad}) |
+            @Html.ActionLink("Editar", "Editar", new {  IdUnidad=item.IdUnidad}) |
            |
-            @Html.ActionLink("Eliminar", "Eliminar", new { id=item.IdUnidad})
+            @Html.ActionLink("Eliminar", "Eliminar", new { IdUnidad = item.IdUnidad, item.Placa})
         </td>
     </tr>
 }

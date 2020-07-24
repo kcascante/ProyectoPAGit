@@ -237,8 +237,8 @@
     <Content Include="Views\TipoPlaca\Crear.cshtml" />
     <Content Include="Views\TipoPlaca\Editar.cshtml" />
     <Content Include="Views\TipoPlaca\Eliminar.cshtml" />
-    <Content Include="Views\UsuarioRol\Index.cshtml" />
     <Content Include="Views\UsuarioRol\Consulta.cshtml" />
+    <Content Include="Views\UsuarioRol\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

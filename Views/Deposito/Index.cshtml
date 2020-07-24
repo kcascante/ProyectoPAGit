@@ -1,10 +1,10 @@
 ﻿@model IEnumerable<ProyectoPA.Models.Deposito>
 
 @{
-    ViewBag.Title = "Deposito";
+    ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+    <h2>Deposito</h2>
 
 <p>
     @Html.ActionLink("Crear Deposito", "Crear")
@@ -53,9 +53,9 @@
             @Html.DisplayFor(modelItem => item.Estado)
         </td>
         <td>
-            @Html.ActionLink("Editar", "Editar", new {  id=item.IdDeposito }) |
+            @Html.ActionLink("Editar", "Editar", new { IdDeposito = item.IdDeposito }) |
            |
-            @Html.ActionLink("Eliminar", "Eliminar", new {  id=item.IdDeposito })
+            @Html.ActionLink("Eliminar", "Eliminar", new {  IdDeposito=item.IdDeposito })
         </td>
     </tr>
 }

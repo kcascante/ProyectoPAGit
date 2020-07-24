@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<ProyectoPA.Models.TipoPlaca>
 
 @{
-    ViewBag.Title = "Tipo-Placa";
+    ViewBag.Title = "Index";
 }
 
 <h2>Index</h2>
@@ -35,9 +35,9 @@
             @Html.DisplayFor(modelItem => item.Estado)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new {  id=item.IdTipoPlaca }) |
+            @Html.ActionLink("Edit", "Edit", new { IdTipoPlaca = item.IdTipoPlaca }) |
            
-            @Html.ActionLink("Delete", "Delete", new {  id=item.IdTipoPlaca })
+            @Html.ActionLink("Delete", "Delete", new { IdTipoPlaca = item.IdTipoPlaca })
         </td>
     </tr>
 }
